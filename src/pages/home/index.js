@@ -16,8 +16,8 @@ export default function Home({ setVisible, posts }) {
     setHeight(middle.current.clientHeight);
   }, []);
   return (
-    <div className="home" style={{ height: `auto` }}>
-      <Header />
+    <div className="home" style={{ height: `${height + 150}px` }}>
+      <Header page="home" />
       <LeftHome user={user} />
       <div className="home_middle" ref={middle}>
         <Stories />
